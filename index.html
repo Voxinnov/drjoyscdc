@@ -28,6 +28,7 @@
         <a href="#about" class="nav__link" id="nav-about">About</a>
         <a href="#services" class="nav__link" id="nav-services">Services</a>
         <a href="#adolescent" class="nav__link" id="nav-adolescent">Adolescent Care</a>
+        <a href="#gallery" class="nav__link" id="nav-gallery">Gallery</a>
         <a href="#contact" class="nav__link" id="nav-contact">Contact</a>
         <a href="tel:04862223360" class="btn btn--primary btn--sm" id="nav-book-btn">Book Consultation</a>
       </nav>
@@ -42,7 +43,12 @@
       <a href="#about" class="mobile-nav__link" id="mnav-about">About</a>
       <a href="#services" class="mobile-nav__link" id="mnav-services">Services</a>
       <a href="#adolescent" class="mobile-nav__link" id="mnav-adolescent">Adolescent Care</a>
+      <a href="#gallery" class="mobile-nav__link" id="mnav-gallery">Gallery</a>
       <a href="#contact" class="mobile-nav__link" id="mnav-contact">Contact</a>
+      <a href="https://wa.me/919744782360" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp" id="mnav-whatsapp-btn" style="text-align:center;margin-top:0.5rem;display:flex;align-items:center;justify-content:center;gap:8px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Chat on WhatsApp
+      </a>
       <a href="tel:04862223360" class="btn btn--primary" id="mnav-book-btn" style="text-align:center;margin-top:0.5rem;">Book Consultation</a>
     </div>
   </header>
@@ -160,6 +166,13 @@
             <h3 class="service-card__title">Physiotherapy</h3>
             <p class="service-card__text">Motor skill development and physical rehabilitation for children.</p>
           </article>
+          <article class="service-card fade-in services__grid--center-last" id="svc-remedial">
+            <div class="service-card__icon" style="--ic:#8B5CF6;--ibg:#F3EEFF" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 7h6M9 11h4" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Remedial Education</h3>
+            <p class="service-card__text">Individualised learning support to help children overcome academic and literacy challenges.</p>
+          </article>
         </div>
         <div class="services__cta fade-in">
           <a href="#contact" class="btn btn--ghost" id="view-all-services-btn">View All Services &#8594;</a>
@@ -191,17 +204,13 @@
     <section class="about" id="about" aria-label="About the doctor">
       <div class="container about__inner">
         <div class="about__photo-wrap fade-in">
-          <div class="about__photo-placeholder" aria-label="Doctor photo placeholder">
-            <svg width="100" height="100" viewBox="0 0 80 80" fill="none" aria-hidden="true">
-              <circle cx="40" cy="28" r="20" fill="#C9A87A"/>
-              <path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" fill="#1B6B5A"/>
-              <circle cx="40" cy="28" r="18" fill="#E8C99A"/>
-            </svg>
-            <span class="about__photo-badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z" fill="#FFD600"/></svg>
-              Verified Doctor
-            </span>
+          <div class="about__photo-placeholder" aria-label="Dr Sanju Joy profile photo">
+            <img src="dr_sanju_joy.jpg" alt="Dr Sanju Joy – Paediatric & Developmental Specialist" class="about__doctor-photo" width="300" height="300" loading="eager" />
           </div>
+          <span class="about__photo-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z" fill="#FFD600"/></svg>
+            Verified Doctor
+          </span>
         </div>
         <div class="about__content fade-in delay-1">
           <span class="section-label">Meet the Doctor</span>
@@ -231,12 +240,124 @@
           <div class="team-pill" id="team-speech"><span class="team-pill__icon" aria-hidden="true">&#128483;&#65039;</span><span>Speech Therapist</span></div>
           <div class="team-pill" id="team-educator"><span class="team-pill__icon" aria-hidden="true">&#128218;</span><span>Special Educator</span></div>
           <div class="team-pill" id="team-physio"><span class="team-pill__icon" aria-hidden="true">&#127939;</span><span>Physiotherapist</span></div>
+          <div class="team-pill" id="team-social-worker"><span class="team-pill__icon" aria-hidden="true">&#129309;</span><span>Social Worker</span></div>
         </div>
         <div class="team__cta fade-in">
-          <a href="#contact" class="btn btn--ghost" id="meet-team-btn">Meet Our Team &#8594;</a>
+          <a href="#gallery" class="btn btn--ghost" id="meet-team-btn">View Clinic &amp; Team Gallery &#8594;</a>
         </div>
       </div>
     </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section" id="gallery" aria-label="Photo gallery of Dr Joys CDC">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Inside Dr Joys CDC</span>
+          <h2 class="section-title">Our <span class="highlight">Gallery</span></h2>
+          <p class="section-sub">A glimpse into our clinic environment, modern facilities, consultation spaces, and dedicated care team.</p>
+        </div>
+        <div class="gallery__grid fade-in">
+          <!-- Item 1: Team Photo (Featured / Span 2) -->
+          <div class="gallery__item gallery__item--wide" data-src="gallery-team.jpg" data-caption="Our Dedicated Multidisciplinary Team – Specialists and therapists at Dr Joys CDC" tabindex="0" role="button" aria-label="View photo of Our Dedicated Multidisciplinary Team">
+            <div class="gallery__img-wrap">
+              <img src="gallery-team.jpg" alt="Multidisciplinary clinical team of therapists and staff at Dr Joys CDC" class="gallery__img" width="1024" height="682" loading="lazy" />
+              <div class="gallery__overlay">
+                <span class="gallery__tag">Our Team</span>
+                <div class="gallery__info">
+                  <h3 class="gallery__item-title">Our Multidisciplinary Team</h3>
+                  <p class="gallery__item-desc">Pediatrician, developmental &amp; behavioral therapists, speech therapists, and educators</p>
+                </div>
+                <div class="gallery__zoom-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Dr. Sanju Joy -->
+          <div class="gallery__item" data-src="gallery-dr-sanju-joy.jpg" data-caption="Dr. Sanju Joy, Consultant Pediatrician in his consultation chamber" tabindex="0" role="button" aria-label="View photo of Dr. Sanju Joy">
+            <div class="gallery__img-wrap">
+              <img src="gallery-dr-sanju-joy.jpg" alt="Dr. Sanju Joy, Pediatrician at Dr Joys CDC Thodupuzha" class="gallery__img" width="1024" height="682" loading="lazy" />
+              <div class="gallery__overlay">
+                <span class="gallery__tag">Pediatrician</span>
+                <div class="gallery__info">
+                  <h3 class="gallery__item-title">Dr. Sanju Joy</h3>
+                  <p class="gallery__item-desc">Compassionate pediatric &amp; developmental assessment</p>
+                </div>
+                <div class="gallery__zoom-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Reception / Entrance -->
+          <div class="gallery__item" data-src="gallery-reception.jpg" data-caption="Centre Entrance &amp; Reception area at Dr Joys CDC" tabindex="0" role="button" aria-label="View photo of Centre Entrance and Reception">
+            <div class="gallery__img-wrap">
+              <img src="gallery-reception.jpg" alt="Reception and entrance of Dr Joys CDC in Thodupuzha" class="gallery__img" width="1024" height="682" loading="lazy" />
+              <div class="gallery__overlay">
+                <span class="gallery__tag">Entrance &amp; Reception</span>
+                <div class="gallery__info">
+                  <h3 class="gallery__item-title">Welcoming Reception</h3>
+                  <p class="gallery__item-desc">Child-friendly, accessible, and hygienic premises</p>
+                </div>
+                <div class="gallery__zoom-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Consultation Room -->
+          <div class="gallery__item" data-src="gallery-consultation-room.jpg" data-caption="Examination &amp; consultation room equipped for gentle pediatric checks" tabindex="0" role="button" aria-label="View photo of Consultation and Examination Room">
+            <div class="gallery__img-wrap">
+              <img src="gallery-consultation-room.jpg" alt="Child examination and consultation room at Dr Joys CDC" class="gallery__img" width="1024" height="682" loading="lazy" />
+              <div class="gallery__overlay">
+                <span class="gallery__tag">Examination Room</span>
+                <div class="gallery__info">
+                  <h3 class="gallery__item-title">Consultation Space</h3>
+                  <p class="gallery__item-desc">Comfortable and quiet space for individual child care</p>
+                </div>
+                <div class="gallery__zoom-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Services Board -->
+          <div class="gallery__item" data-src="gallery-services-board.jpg" data-caption="Comprehensive clinical services and clinic hours information board" tabindex="0" role="button" aria-label="View photo of Services and Assessment Signboard">
+            <div class="gallery__img-wrap">
+              <img src="gallery-services-board.jpg" alt="Comprehensive services and clinic hours signboard at Dr Joys CDC" class="gallery__img" width="1024" height="682" loading="lazy" />
+              <div class="gallery__overlay">
+                <span class="gallery__tag">Comprehensive Services</span>
+                <div class="gallery__info">
+                  <h3 class="gallery__item-title">Services &amp; Assessments</h3>
+                  <p class="gallery__item-desc">Full spectrum child development and adolescent care</p>
+                </div>
+                <div class="gallery__zoom-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image preview">
+      <div class="gallery-modal__backdrop" id="gallery-modal-backdrop"></div>
+      <div class="gallery-modal__content">
+        <button class="gallery-modal__close" id="gallery-modal-close" aria-label="Close photo preview">&times;</button>
+        <button class="gallery-modal__prev" id="gallery-modal-prev" aria-label="Previous photo">&#10094;</button>
+        <button class="gallery-modal__next" id="gallery-modal-next" aria-label="Next photo">&#10095;</button>
+        <div class="gallery-modal__img-container">
+          <img src="" alt="" class="gallery-modal__img" id="gallery-modal-img" />
+          <p class="gallery-modal__caption" id="gallery-modal-caption"></p>
+        </div>
+      </div>
+    </div>
 
     <!-- CONTACT CTA -->
     <section class="cta-section" id="cta" aria-label="Call to action">
@@ -245,6 +366,10 @@
         <p class="cta-section__text">Have questions about your child's development or adolescent care?</p>
         <div class="cta-section__actions">
           <a href="tel:04862223360" class="btn btn--maroon btn--lg" id="cta-book-btn">Book a Consultation</a>
+          <a href="https://wa.me/919744782360" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--lg" id="cta-whatsapp-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="margin-right:4px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp Us
+          </a>
           <a href="tel:04862223360" class="btn btn--outline-dark btn--lg" id="cta-call-btn">Call 04862 223360</a>
         </div>
       </div>
@@ -271,6 +396,13 @@
               <div>
                 <strong>Phone</strong>
                 <a href="tel:04862223360" class="contact__phone-link">04862 223360</a>
+              </div>
+            </div>
+            <div class="contact__item" id="contact-whatsapp">
+              <svg class="contact__icon" width="22" height="22" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/919744782360" target="_blank" rel="noopener noreferrer" class="contact__phone-link contact__whatsapp-link" aria-label="Chat with Dr Joys CDC on WhatsApp">+91 97447 82360</a>
               </div>
             </div>
             <div class="contact__item" id="contact-hours">
@@ -306,10 +438,16 @@
         <a href="#about" class="footer__link" id="footer-about">About</a>
         <a href="#services" class="footer__link" id="footer-services">Services</a>
         <a href="#adolescent" class="footer__link" id="footer-adolescent">Adolescent Care</a>
+        <a href="#gallery" class="footer__link" id="footer-gallery">Gallery</a>
         <a href="#contact" class="footer__link" id="footer-contact">Contact</a>
       </nav>
-      <div class="footer__phone">
-        <a href="tel:04862223360" id="footer-phone-link">04862 223360</a>
+      <div class="footer__contacts">
+        <a href="tel:04862223360" id="footer-phone-link" aria-label="Call 04862 223360">04862 223360</a>
+        <span class="footer__sep" aria-hidden="true">&bull;</span>
+        <a href="https://wa.me/919744782360" target="_blank" rel="noopener noreferrer" id="footer-whatsapp-link" aria-label="Chat on WhatsApp +91 97447 82360">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          +91 97447 82360
+        </a>
       </div>
     </div>
     <div class="footer__bottom">
@@ -323,11 +461,23 @@
       <svg width="18" height="18" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2H3a1 1 0 0 0-1 1v4c0 9.941 8.059 18 18 18h4a1 1 0 0 0 1-1v-5a1 1 0 0 0-.684-.948l-5-1.667a1 1 0 0 0-1.105.38l-1.68 2.38a15.072 15.072 0 0 1-7.075-7.075l2.38-1.68a1 1 0 0 0 .38-1.105l-1.667-5A1 1 0 0 0 8 2Z" fill="currentColor"/></svg>
       Call
     </a>
+    <a href="https://wa.me/919744782360" target="_blank" rel="noopener noreferrer" class="mobile-sticky__btn mobile-sticky__btn--whatsapp" id="sticky-whatsapp-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      WhatsApp
+    </a>
     <a href="tel:04862223360" class="mobile-sticky__btn mobile-sticky__btn--book" id="sticky-book-btn">
       <svg width="18" height="18" fill="none" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 2v4M16 2v4M3 10h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       Book
     </a>
   </div>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/919744782360" target="_blank" rel="noopener noreferrer" class="whatsapp-float" id="whatsapp-float-btn" aria-label="Chat with Dr Joys CDC on WhatsApp">
+    <span class="whatsapp-float__tooltip">Chat on WhatsApp</span>
+    <span class="whatsapp-float__btn">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </span>
+  </a>
 
   <script src="script.js"></script>
 </body>

@@ -100,4 +100,82 @@
     setTimeout(function () { el.classList.add('visible'); }, 100);
   });
 
+  // ── Gallery Lightbox Modal ────────────────────────
+  const galleryItems = document.querySelectorAll('.gallery__item');
+  const modal = document.getElementById('gallery-modal');
+  const modalImg = document.getElementById('gallery-modal-img');
+  const modalCaption = document.getElementById('gallery-modal-caption');
+  const modalClose = document.getElementById('gallery-modal-close');
+  const modalBackdrop = document.getElementById('gallery-modal-backdrop');
+  const modalPrev = document.getElementById('gallery-modal-prev');
+  const modalNext = document.getElementById('gallery-modal-next');
+
+  let currentGalleryIdx = 0;
+  const galleryData = Array.from(galleryItems).map(function (item) {
+    return {
+      src: item.getAttribute('data-src'),
+      caption: item.getAttribute('data-caption') || ''
+    };
+  });
+
+  function openGalleryModal(index) {
+    if (!galleryData[index] || !modal || !modalImg) return;
+    currentGalleryIdx = index;
+    modalImg.src = galleryData[currentGalleryIdx].src;
+    modalImg.alt = galleryData[currentGalleryIdx].caption;
+    if (modalCaption) {
+      modalCaption.textContent = galleryData[currentGalleryIdx].caption;
+    }
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeGalleryModal() {
+    if (!modal) return;
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function prevGalleryImage() {
+    currentGalleryIdx = (currentGalleryIdx - 1 + galleryData.length) % galleryData.length;
+    openGalleryModal(currentGalleryIdx);
+  }
+
+  function nextGalleryImage() {
+    currentGalleryIdx = (currentGalleryIdx + 1) % galleryData.length;
+    openGalleryModal(currentGalleryIdx);
+  }
+
+  if (galleryItems.length && modal) {
+    galleryItems.forEach(function (item, idx) {
+      item.addEventListener('click', function () {
+        openGalleryModal(idx);
+      });
+      item.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openGalleryModal(idx);
+        }
+      });
+    });
+
+    if (modalClose) modalClose.addEventListener('click', closeGalleryModal);
+    if (modalBackdrop) modalBackdrop.addEventListener('click', closeGalleryModal);
+    if (modalPrev) modalPrev.addEventListener('click', prevGalleryImage);
+    if (modalNext) modalNext.addEventListener('click', nextGalleryImage);
+
+    document.addEventListener('keydown', function (e) {
+      if (!modal.classList.contains('active')) return;
+      if (e.key === 'Escape') {
+        closeGalleryModal();
+      } else if (e.key === 'ArrowLeft') {
+        prevGalleryImage();
+      } else if (e.key === 'ArrowRight') {
+        nextGalleryImage();
+      }
+    });
+  }
+
 })();
